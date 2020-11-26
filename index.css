@@ -1,19 +1,70 @@
 body {
-  background-color: tomato;
+  background-color: black;
 }
 
 h1 {
-  color: tomato;
+  color: white;
+}
+ul {
+  color: white;
+}
+.js-greetings {
+  color: white;
 }
 
 .form,
 .greetings {
   display: none;
 }
-
-.showing {
-  display: block;
+.js-clock {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  margin: 10px;
 }
+.showing {
+  display: flex;
+  justify-content: center;
+  font-size: 58px;
+}
+.js-toDoForm {
+  display: flex;
+  justify-content: center;
+}
+.js-toDoForm input {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.js-toDoForm input::placeholder {
+  color: gainsboro;
+}
+.js-toDoList li > span {
+  margin-left: 10px;
+  align-items: center;
+}
+.js-toDoList li > button {
+  padding: 3px 8px;
+}
+
+.js-toDoList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.js-toDoList li {
+  margin-bottom: 5px;
+}
+
 .bgImage {
   position: absolute;
   top: 0;
