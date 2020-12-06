@@ -1,15 +1,41 @@
 body {
   background-color: black;
 }
-
-h1 {
+.js-form input {
   color: white;
+  text-align: center;
+  font-size: 40px;
+  outline: none;
+  width: 500px;
+  height: 50px;
+  border: 0;
+  border-bottom: 2px solid white;
+  background: transparent;
+  margin-bottom: 40px;
 }
+
+.js-form input::placeholder {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
 ul {
   color: white;
 }
+.js-date {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+}
+
 .js-greetings {
   color: white;
+  font-weight: 800;
+  margin-bottom: 40px;
 }
 
 .form,
@@ -18,8 +44,10 @@ ul {
 }
 .js-clock {
   display: flex;
+  color: white;
+  font-weight: 800;
   justify-content: center;
-  font-size: 70px;
+  font-size: 110px;
   margin: 10px;
 }
 .showing {
@@ -45,7 +73,7 @@ ul {
   transition: border-color 0.2s;
 }
 .js-toDoForm input::placeholder {
-  color: gainsboro;
+  color: white;
 }
 .js-toDoList li > span {
   margin-left: 10px;
@@ -82,4 +110,15 @@ ul {
   to {
     opacity: 1;
   }
+}
+.js-weather {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  margin-right: 50px;
+  color: white;
+  font-weight: 700;
 }
